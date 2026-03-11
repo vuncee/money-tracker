@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to project</h1>
+      <button id="Stats-button">Stats</button>
+      <div class="stats-list hidden" > <input type="date" id="Stats-date">
+
+    <button id="Show-stats">Показати за день</button>
+
+    <div id="Day-total">Загальна сума: 0 Грн</div>
+
+    <ul id="Filtered-list"></ul>
+</div>
+    
+      
+    </header>
+
+    <div class="main">
+      <div class="search">
+        <input id="Food-name" type="text" />
+        <input id="Food-price" type="number" />
+        <input id="Date" type="datetime-local" max="9999-12-31T23:59" />
+        <button id="Main-button">Add</button>
+      </div>
+
+      <div class="list">
+        <ul id="All-food"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
